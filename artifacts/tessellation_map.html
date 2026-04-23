@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af67cdec9afd786cac7d7e1e6a6dcf93 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_af67cdec9afd786cac7d7e1e6a6dcf93" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_af67cdec9afd786cac7d7e1e6a6dcf93 = L.map(
+                "map_af67cdec9afd786cac7d7e1e6a6dcf93",
+                {
+                    center: [55.7047868889616, 12.5027953028877],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+
+            
+
+        
+    
+            var tile_layer_405fec4743b0fda9a96817adcec1a349 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_405fec4743b0fda9a96817adcec1a349.addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+            var circle_662760d00748e74fd00fd37308b45fed = L.circle(
+                [55.670727553846156, 12.389820176923077],
+                {"bubblingMouseEvents": true, "color": "#072CD6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#072CD6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_191940b661dc80fb7e6383f64898a048 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50a6d299ced5c285368d8648e0a5e85f = $(`<div id="html_50a6d299ced5c285368d8648e0a5e85f" style="width: 100.0%; height: 100.0%;">tile_ID: Albertslund</div>`)[0];
+                popup_191940b661dc80fb7e6383f64898a048.setContent(html_50a6d299ced5c285368d8648e0a5e85f);
+            
+        
+
+        circle_662760d00748e74fd00fd37308b45fed.bindPopup(popup_191940b661dc80fb7e6383f64898a048)
+        ;
+
+        
+    
+    
+            var circle_1150733bf7df915818697ddc92aa924d = L.circle(
+                [55.757389960562605, 12.455336243656921],
+                {"bubblingMouseEvents": true, "color": "#50DC36", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#50DC36", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_1ee46a8877e89f874b7673066e91c008 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ec0c56e071605b037066d25629f0124 = $(`<div id="html_7ec0c56e071605b037066d25629f0124" style="width: 100.0%; height: 100.0%;">tile_ID: Bagsvaerd</div>`)[0];
+                popup_1ee46a8877e89f874b7673066e91c008.setContent(html_7ec0c56e071605b037066d25629f0124);
+            
+        
+
+        circle_1150733bf7df915818697ddc92aa924d.bindPopup(popup_1ee46a8877e89f874b7673066e91c008)
+        ;
+
+        
+    
+    
+            var circle_4dd975b29fa2e78751800ffb251b5c3c = L.circle(
+                [55.729226999999995, 12.3592585],
+                {"bubblingMouseEvents": true, "color": "#EDE92E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#EDE92E", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_69c600f5f2d6beb33de376bdf743a11a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ef969ba89c6387d33f29b56f8e33f18 = $(`<div id="html_8ef969ba89c6387d33f29b56f8e33f18" style="width: 100.0%; height: 100.0%;">tile_ID: Ballerup</div>`)[0];
+                popup_69c600f5f2d6beb33de376bdf743a11a.setContent(html_8ef969ba89c6387d33f29b56f8e33f18);
+            
+        
+
+        circle_4dd975b29fa2e78751800ffb251b5c3c.bindPopup(popup_69c600f5f2d6beb33de376bdf743a11a)
+        ;
+
+        
+    
+    
+            var circle_3b91025c8f69a3c522c3309dc0bab72b = L.circle(
+                [55.70721819301946, 12.488342104128222],
+                {"bubblingMouseEvents": true, "color": "#14ADC8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#14ADC8", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_ea21f2b6c305be0bb8abe39cb78a27ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6f60cbf58c90da2acdc25d0fced03d6 = $(`<div id="html_e6f60cbf58c90da2acdc25d0fced03d6" style="width: 100.0%; height: 100.0%;">tile_ID: Bronshoj</div>`)[0];
+                popup_ea21f2b6c305be0bb8abe39cb78a27ac.setContent(html_e6f60cbf58c90da2acdc25d0fced03d6);
+            
+        
+
+        circle_3b91025c8f69a3c522c3309dc0bab72b.bindPopup(popup_ea21f2b6c305be0bb8abe39cb78a27ac)
+        ;
+
+        
+    
+    
+            var circle_bff7d1036bcb2983bd2570a88c88fe3b = L.circle(
+                [55.7580478621819, 12.57300285184688],
+                {"bubblingMouseEvents": true, "color": "#99E64F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#99E64F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_19d4c7f2be02b4f6ad4b21978d021d5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65d81abbda9a2626f29ae78e3d14b607 = $(`<div id="html_65d81abbda9a2626f29ae78e3d14b607" style="width: 100.0%; height: 100.0%;">tile_ID: Charlottelund</div>`)[0];
+                popup_19d4c7f2be02b4f6ad4b21978d021d5b.setContent(html_65d81abbda9a2626f29ae78e3d14b607);
+            
+        
+
+        circle_bff7d1036bcb2983bd2570a88c88fe3b.bindPopup(popup_19d4c7f2be02b4f6ad4b21978d021d5b)
+        ;
+
+        
+    
+    
+            var circle_bc721bcfc90f3e6cc4f72851697a69e7 = L.circle(
+                [55.7342510959743, 12.52338516765385],
+                {"bubblingMouseEvents": true, "color": "#C5C5B2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C5C5B2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_6265776d1b31d9143cc7d5aac8ec2a58 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d1dc1c69f2fd69b30650a1f5ff594d0 = $(`<div id="html_5d1dc1c69f2fd69b30650a1f5ff594d0" style="width: 100.0%; height: 100.0%;">tile_ID: Dyssegoord</div>`)[0];
+                popup_6265776d1b31d9143cc7d5aac8ec2a58.setContent(html_5d1dc1c69f2fd69b30650a1f5ff594d0);
+            
+        
+
+        circle_bc721bcfc90f3e6cc4f72851697a69e7.bindPopup(popup_6265776d1b31d9143cc7d5aac8ec2a58)
+        ;
+
+        
+    
+    
+            var circle_9f97cb7cc8b1e5af9bf7de20b9dd3c38 = L.circle(
+                [55.681225629964565, 12.530383067696057],
+                {"bubblingMouseEvents": true, "color": "#13AC3F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#13AC3F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_12d248a82abb7b16fc6077964b7053f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cf04249b19fc81714fcff2adb32e970c = $(`<div id="html_cf04249b19fc81714fcff2adb32e970c" style="width: 100.0%; height: 100.0%;">tile_ID: Frederiksberg C</div>`)[0];
+                popup_12d248a82abb7b16fc6077964b7053f4.setContent(html_cf04249b19fc81714fcff2adb32e970c);
+            
+        
+
+        circle_9f97cb7cc8b1e5af9bf7de20b9dd3c38.bindPopup(popup_12d248a82abb7b16fc6077964b7053f4)
+        ;
+
+        
+    
+    
+            var circle_203b5bcc10a008b3e500a4b86642434f = L.circle(
+                [55.75220005461113, 12.529606959254144],
+                {"bubblingMouseEvents": true, "color": "#5DF122", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5DF122", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_99e211fdb95f3e2ae01276c2428649f0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9dee0e1c50e41c343d6de42f1f92b38a = $(`<div id="html_9dee0e1c50e41c343d6de42f1f92b38a" style="width: 100.0%; height: 100.0%;">tile_ID: Gentofte</div>`)[0];
+                popup_99e211fdb95f3e2ae01276c2428649f0.setContent(html_9dee0e1c50e41c343d6de42f1f92b38a);
+            
+        
+
+        circle_203b5bcc10a008b3e500a4b86642434f.bindPopup(popup_99e211fdb95f3e2ae01276c2428649f0)
+        ;
+
+        
+    
+    
+            var circle_c73ddf01b942d9f065b32cd19bdccda6 = L.circle(
+                [55.67025887157243, 12.398469323625097],
+                {"bubblingMouseEvents": true, "color": "#924480", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#924480", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_cf7f3c249fe2f9d557d8e1c12cac59df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd8b08ce3e369a13f80a5938bd8a6351 = $(`<div id="html_dd8b08ce3e369a13f80a5938bd8a6351" style="width: 100.0%; height: 100.0%;">tile_ID: Glostrup</div>`)[0];
+                popup_cf7f3c249fe2f9d557d8e1c12cac59df.setContent(html_dd8b08ce3e369a13f80a5938bd8a6351);
+            
+        
+
+        circle_c73ddf01b942d9f065b32cd19bdccda6.bindPopup(popup_cf7f3c249fe2f9d557d8e1c12cac59df)
+        ;
+
+        
+    
+    
+            var circle_d8cfa43e3e8c3ab3fa6520ea84ce53fe = L.circle(
+                [55.73314312370317, 12.565144698943323],
+                {"bubblingMouseEvents": true, "color": "#105DFD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#105DFD", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_b71f715236b039ba735639a3ccbe2766 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7de47638bed3afbff44419fac8084d19 = $(`<div id="html_7de47638bed3afbff44419fac8084d19" style="width: 100.0%; height: 100.0%;">tile_ID: Hellerup</div>`)[0];
+                popup_b71f715236b039ba735639a3ccbe2766.setContent(html_7de47638bed3afbff44419fac8084d19);
+            
+        
+
+        circle_d8cfa43e3e8c3ab3fa6520ea84ce53fe.bindPopup(popup_b71f715236b039ba735639a3ccbe2766)
+        ;
+
+        
+    
+    
+            var circle_10204399da0ff23ad7878442a19b276e = L.circle(
+                [55.727035100993945, 12.439292117559694],
+                {"bubblingMouseEvents": true, "color": "#17CD12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#17CD12", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_7fae93f10d46d8b32df68e8b0c8cd644 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4e8ce4beefe269c6ef7865222544e16 = $(`<div id="html_a4e8ce4beefe269c6ef7865222544e16" style="width: 100.0%; height: 100.0%;">tile_ID: Herlev</div>`)[0];
+                popup_7fae93f10d46d8b32df68e8b0c8cd644.setContent(html_a4e8ce4beefe269c6ef7865222544e16);
+            
+        
+
+        circle_10204399da0ff23ad7878442a19b276e.bindPopup(popup_7fae93f10d46d8b32df68e8b0c8cd644)
+        ;
+
+        
+    
+    
+            var circle_b7cbb968a359a25a902966d6b9a435c5 = L.circle(
+                [55.641941873659114, 12.469077177700726],
+                {"bubblingMouseEvents": true, "color": "#F1F92A", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F1F92A", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_198907c0e34eef434274fb2fb8234620 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_323acfa10da95d9d3c41e3384e998686 = $(`<div id="html_323acfa10da95d9d3c41e3384e998686" style="width: 100.0%; height: 100.0%;">tile_ID: Hvidovre</div>`)[0];
+                popup_198907c0e34eef434274fb2fb8234620.setContent(html_323acfa10da95d9d3c41e3384e998686);
+            
+        
+
+        circle_b7cbb968a359a25a902966d6b9a435c5.bindPopup(popup_198907c0e34eef434274fb2fb8234620)
+        ;
+
+        
+    
+    
+            var circle_d6cb8dcd4e4f717f9122f3ed60dd85a4 = L.circle(
+                [55.62861156447169, 12.630142409553883],
+                {"bubblingMouseEvents": true, "color": "#28CABF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#28CABF", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_65add2b6fa18af4abbeb1b0a9731a545 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a897833c16fc1fa729d98cbc17db5e5 = $(`<div id="html_4a897833c16fc1fa729d98cbc17db5e5" style="width: 100.0%; height: 100.0%;">tile_ID: Kastrup</div>`)[0];
+                popup_65add2b6fa18af4abbeb1b0a9731a545.setContent(html_4a897833c16fc1fa729d98cbc17db5e5);
+            
+        
+
+        circle_d6cb8dcd4e4f717f9122f3ed60dd85a4.bindPopup(popup_65add2b6fa18af4abbeb1b0a9731a545)
+        ;
+
+        
+    
+    
+            var circle_adbaa83ddfa01b2bddef01332e30301f = L.circle(
+                [55.77793449628778, 12.510375484109064],
+                {"bubblingMouseEvents": true, "color": "#D1DDA6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D1DDA6", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_10f5b7b771bda4a91376b92ce82cbeb2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23bbd5ca09158c2e872af4c01dc2d1c2 = $(`<div id="html_23bbd5ca09158c2e872af4c01dc2d1c2" style="width: 100.0%; height: 100.0%;">tile_ID: Kgs. Lyngby</div>`)[0];
+                popup_10f5b7b771bda4a91376b92ce82cbeb2.setContent(html_23bbd5ca09158c2e872af4c01dc2d1c2);
+            
+        
+
+        circle_adbaa83ddfa01b2bddef01332e30301f.bindPopup(popup_10f5b7b771bda4a91376b92ce82cbeb2)
+        ;
+
+        
+    
+    
+            var circle_06020d579c33b40ce293ec787cdee7bf = L.circle(
+                [55.76959606836519, 12.591565133864119],
+                {"bubblingMouseEvents": true, "color": "#7EAD9E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7EAD9E", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_33eb1b99eb9bab3476ec228b52f6611a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11a79a2220dbe19248ad5234364f9cec = $(`<div id="html_11a79a2220dbe19248ad5234364f9cec" style="width: 100.0%; height: 100.0%;">tile_ID: Klampenborg</div>`)[0];
+                popup_33eb1b99eb9bab3476ec228b52f6611a.setContent(html_11a79a2220dbe19248ad5234364f9cec);
+            
+        
+
+        circle_06020d579c33b40ce293ec787cdee7bf.bindPopup(popup_33eb1b99eb9bab3476ec228b52f6611a)
+        ;
+
+        
+    
+    
+            var circle_69db2c2dc9d2b1462020fd6c4fdbfa22 = L.circle(
+                [55.681750464209905, 12.586750727369212],
+                {"bubblingMouseEvents": true, "color": "#281549", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#281549", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_56fbd39d52ac9bde53743d43c738cdfa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43f8b39a2d47ca348f0675c84cc2caff = $(`<div id="html_43f8b39a2d47ca348f0675c84cc2caff" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn K</div>`)[0];
+                popup_56fbd39d52ac9bde53743d43c738cdfa.setContent(html_43f8b39a2d47ca348f0675c84cc2caff);
+            
+        
+
+        circle_69db2c2dc9d2b1462020fd6c4fdbfa22.bindPopup(popup_56fbd39d52ac9bde53743d43c738cdfa)
+        ;
+
+        
+    
+    
+            var circle_61b4a2fb993900ecdacf8d1186824b2c = L.circle(
+                [55.69686750747746, 12.549782514800967],
+                {"bubblingMouseEvents": true, "color": "#9BE60B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9BE60B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_293acd470eda9926701a923aec6c8f1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03d26aeebb820ed31f7860509966f3ea = $(`<div id="html_03d26aeebb820ed31f7860509966f3ea" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn N</div>`)[0];
+                popup_293acd470eda9926701a923aec6c8f1c.setContent(html_03d26aeebb820ed31f7860509966f3ea);
+            
+        
+
+        circle_61b4a2fb993900ecdacf8d1186824b2c.bindPopup(popup_293acd470eda9926701a923aec6c8f1c)
+        ;
+
+        
+    
+    
+            var circle_d61b121df502851f756bd92a265f7f56 = L.circle(
+                [55.7073708581293, 12.528817940820346],
+                {"bubblingMouseEvents": true, "color": "#0D44B0", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0D44B0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_78405cb543378677b2568f0abf63ded9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_225b6032a4607505d494f287ae920df2 = $(`<div id="html_225b6032a4607505d494f287ae920df2" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn NV</div>`)[0];
+                popup_78405cb543378677b2568f0abf63ded9.setContent(html_225b6032a4607505d494f287ae920df2);
+            
+        
+
+        circle_d61b121df502851f756bd92a265f7f56.bindPopup(popup_78405cb543378677b2568f0abf63ded9)
+        ;
+
+        
+    
+    
+            var circle_c421cb125cecebfc07912c01c35cb2fa = L.circle(
+                [55.707064438933386, 12.573900957051192],
+                {"bubblingMouseEvents": true, "color": "#C2D635", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2D635", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_c94f94131a907ed6ef3530d617d5207a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2141bab32cb93e0bd161410377005195 = $(`<div id="html_2141bab32cb93e0bd161410377005195" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn O</div>`)[0];
+                popup_c94f94131a907ed6ef3530d617d5207a.setContent(html_2141bab32cb93e0bd161410377005195);
+            
+        
+
+        circle_c421cb125cecebfc07912c01c35cb2fa.bindPopup(popup_c94f94131a907ed6ef3530d617d5207a)
+        ;
+
+        
+    
+    
+            var circle_5bcf9f083f841f8e111f613376827c51 = L.circle(
+                [55.6562518663183, 12.605286087886531],
+                {"bubblingMouseEvents": true, "color": "#36BACE", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#36BACE", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_3f544168a9a2d6d4ac36d069d8ec98ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62a8713ece1595c6d1514f65398aea0e = $(`<div id="html_62a8713ece1595c6d1514f65398aea0e" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn S</div>`)[0];
+                popup_3f544168a9a2d6d4ac36d069d8ec98ab.setContent(html_62a8713ece1595c6d1514f65398aea0e);
+            
+        
+
+        circle_5bcf9f083f841f8e111f613376827c51.bindPopup(popup_3f544168a9a2d6d4ac36d069d8ec98ab)
+        ;
+
+        
+    
+    
+            var circle_4d0530ba6d8b81d8611745c085476d72 = L.circle(
+                [55.65097914983226, 12.540685896454802],
+                {"bubblingMouseEvents": true, "color": "#70B0FD", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#70B0FD", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_dd37799e97c76946d03cee1158ad93d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98e98f185b87e996cf2b52200e138fc7 = $(`<div id="html_98e98f185b87e996cf2b52200e138fc7" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn SV</div>`)[0];
+                popup_dd37799e97c76946d03cee1158ad93d1.setContent(html_98e98f185b87e996cf2b52200e138fc7);
+            
+        
+
+        circle_4d0530ba6d8b81d8611745c085476d72.bindPopup(popup_dd37799e97c76946d03cee1158ad93d1)
+        ;
+
+        
+    
+    
+            var circle_089288a2f11f2a8619fee0487d0c78a4 = L.circle(
+                [55.66326935921144, 12.561265234820402],
+                {"bubblingMouseEvents": true, "color": "#3EE1D2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3EE1D2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_4707389f56534c96b05ef88607cc21c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f2b949e153d950dae64c1269bee9954 = $(`<div id="html_1f2b949e153d950dae64c1269bee9954" style="width: 100.0%; height: 100.0%;">tile_ID: Kobenhavn V</div>`)[0];
+                popup_4707389f56534c96b05ef88607cc21c5.setContent(html_1f2b949e153d950dae64c1269bee9954);
+            
+        
+
+        circle_089288a2f11f2a8619fee0487d0c78a4.bindPopup(popup_4707389f56534c96b05ef88607cc21c5)
+        ;
+
+        
+    
+    
+            var circle_700d1aba999621b3353506ec97d2e5ba = L.circle(
+                [55.707672103946564, 12.603948543169398],
+                {"bubblingMouseEvents": true, "color": "#126F6E", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#126F6E", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_46c8ccf2629032316b1df1a8d2fda35d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fea4293bb3de20b10488f194a55f4333 = $(`<div id="html_fea4293bb3de20b10488f194a55f4333" style="width: 100.0%; height: 100.0%;">tile_ID: Nordhavn</div>`)[0];
+                popup_46c8ccf2629032316b1df1a8d2fda35d.setContent(html_fea4293bb3de20b10488f194a55f4333);
+            
+        
+
+        circle_700d1aba999621b3353506ec97d2e5ba.bindPopup(popup_46c8ccf2629032316b1df1a8d2fda35d)
+        ;
+
+        
+    
+    
+            var circle_2242332216ceb9b3b15ab232e784b368 = L.circle(
+                [55.68196215694947, 12.451944642144436],
+                {"bubblingMouseEvents": true, "color": "#710754", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#710754", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_5b2aeb3d0675a34efd71c697fc529cab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_009bf1fbf2d35f0c3a9c8f889bc9deba = $(`<div id="html_009bf1fbf2d35f0c3a9c8f889bc9deba" style="width: 100.0%; height: 100.0%;">tile_ID: Rodovre</div>`)[0];
+                popup_5b2aeb3d0675a34efd71c697fc529cab.setContent(html_009bf1fbf2d35f0c3a9c8f889bc9deba);
+            
+        
+
+        circle_2242332216ceb9b3b15ab232e784b368.bindPopup(popup_5b2aeb3d0675a34efd71c697fc529cab)
+        ;
+
+        
+    
+    
+            var circle_6dfb8b7422e3156b75f0d5d1609ec136 = L.circle(
+                [55.73384779422719, 12.394813211592178],
+                {"bubblingMouseEvents": true, "color": "#BC5941", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#BC5941", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_013e7a49b0717bc4af05f390cbaf5cce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_798848ee3f995875dbb4c5570a971e9b = $(`<div id="html_798848ee3f995875dbb4c5570a971e9b" style="width: 100.0%; height: 100.0%;">tile_ID: Skovlunde</div>`)[0];
+                popup_013e7a49b0717bc4af05f390cbaf5cce.setContent(html_798848ee3f995875dbb4c5570a971e9b);
+            
+        
+
+        circle_6dfb8b7422e3156b75f0d5d1609ec136.bindPopup(popup_013e7a49b0717bc4af05f390cbaf5cce)
+        ;
+
+        
+    
+    
+            var circle_3ee58e77049b32e2efa7d485959dfe21 = L.circle(
+                [55.73707535830957, 12.492121559205895],
+                {"bubblingMouseEvents": true, "color": "#560B75", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#560B75", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_fd11d28afacfbcafbedfa45449cb5239 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ac2a6f3d32b3c2e9f78d14bd3ec4a3d = $(`<div id="html_8ac2a6f3d32b3c2e9f78d14bd3ec4a3d" style="width: 100.0%; height: 100.0%;">tile_ID: Soborg</div>`)[0];
+                popup_fd11d28afacfbcafbedfa45449cb5239.setContent(html_8ac2a6f3d32b3c2e9f78d14bd3ec4a3d);
+            
+        
+
+        circle_3ee58e77049b32e2efa7d485959dfe21.bindPopup(popup_fd11d28afacfbcafbedfa45449cb5239)
+        ;
+
+        
+    
+    
+            var circle_8c52d9f701cd1a0823fa3278148be8aa = L.circle(
+                [55.646097375823544, 12.27077464279576],
+                {"bubblingMouseEvents": true, "color": "#45266D", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#45266D", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_a5b0390b13a92c2b755fba2e00518f57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40e698dfbf3661c79ebca606837580a8 = $(`<div id="html_40e698dfbf3661c79ebca606837580a8" style="width: 100.0%; height: 100.0%;">tile_ID: Taastrup</div>`)[0];
+                popup_a5b0390b13a92c2b755fba2e00518f57.setContent(html_40e698dfbf3661c79ebca606837580a8);
+            
+        
+
+        circle_8c52d9f701cd1a0823fa3278148be8aa.bindPopup(popup_a5b0390b13a92c2b755fba2e00518f57)
+        ;
+
+        
+    
+    
+            var circle_ff3a71939490a0016e89c02b607c9539 = L.circle(
+                [55.66045286673156, 12.506110113799974],
+                {"bubblingMouseEvents": true, "color": "#354BC2", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#354BC2", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_7603ea80c8d26aec83f2f09a36da0e6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcfbfd566d6b4a90e2138cf447ce5d97 = $(`<div id="html_bcfbfd566d6b4a90e2138cf447ce5d97" style="width: 100.0%; height: 100.0%;">tile_ID: Valby</div>`)[0];
+                popup_7603ea80c8d26aec83f2f09a36da0e6b.setContent(html_bcfbfd566d6b4a90e2138cf447ce5d97);
+            
+        
+
+        circle_ff3a71939490a0016e89c02b607c9539.bindPopup(popup_7603ea80c8d26aec83f2f09a36da0e6b)
+        ;
+
+        
+    
+    
+            var circle_11eb5c45afc26169ad3f1b299db76358 = L.circle(
+                [55.6885195469628, 12.491480269413968],
+                {"bubblingMouseEvents": true, "color": "#D520ED", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D520ED", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_04e6ee8d3560b91e75911aacd94967df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_67ea3d3b4aa449cdb0f0c47ce8f408d7 = $(`<div id="html_67ea3d3b4aa449cdb0f0c47ce8f408d7" style="width: 100.0%; height: 100.0%;">tile_ID: Vanlose</div>`)[0];
+                popup_04e6ee8d3560b91e75911aacd94967df.setContent(html_67ea3d3b4aa449cdb0f0c47ce8f408d7);
+            
+        
+
+        circle_11eb5c45afc26169ad3f1b299db76358.bindPopup(popup_04e6ee8d3560b91e75911aacd94967df)
+        ;
+
+        
+    
+    
+            var circle_8d81b7fe1af3a4ab4374cfc755665d56 = L.circle(
+                [55.78561737257176, 12.472975328790953],
+                {"bubblingMouseEvents": true, "color": "#A8ED50", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A8ED50", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_af67cdec9afd786cac7d7e1e6a6dcf93);
+        
+    
+        var popup_1dbf5be01e1a608bff51da7d89bb0c69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89e8945d29279de3c138581d74310e6f = $(`<div id="html_89e8945d29279de3c138581d74310e6f" style="width: 100.0%; height: 100.0%;">tile_ID: Virum</div>`)[0];
+                popup_1dbf5be01e1a608bff51da7d89bb0c69.setContent(html_89e8945d29279de3c138581d74310e6f);
+            
+        
+
+        circle_8d81b7fe1af3a4ab4374cfc755665d56.bindPopup(popup_1dbf5be01e1a608bff51da7d89bb0c69)
+        ;
+
+        
+    
+</script>
+</html>
