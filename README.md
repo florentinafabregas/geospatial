@@ -19,7 +19,7 @@ geospatial/
 │   ├── choropleth_popular_municipalities_area
 │   ├── Demand_Supply_gap_analysis
 │   ├── hop_clustering_tendency
-│   ├── BDSCAN_clustering
+│   ├── DBSCAN_clustering
 │   └── flows
 │
 ├── artifacts/                    # output visualizations/maps
